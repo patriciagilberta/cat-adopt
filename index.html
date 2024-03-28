@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cat Adopt</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+
+    <!-- My Own CSS -->
+    <link rel="stylesheet" href="css/app.css" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link 
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital@1&family=Fjalla+One&display=swap" 
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome 5.15.4 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <header class="navbar-container">
+      <div class="logo">
+        <img src="img/cat-adopt-logo.png" alt="Cat Adopt" />
+      </div>
+      
+      <nav class="nav-list">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#allcat">Cats for Adoption</a></li>
+          <li><a href="#howto">How to Adopt</a></li>
+          <li><a href="#about">About Us</a></li>
+        </ul>
+      </nav>
+      
+      <div class="dropdown">
+        <i class="fa fa-bars" id="burgermenu"></i>
+        <div class="dropdown-content">
+          <a href="#home">Home</a>
+          <a href="#allcat">Cats for Adoption</a>
+          <a href="#howto">How to Adopt</a>
+          <a href="#about">About Us</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="content">
+        
+        <article id="home" class="home-banner">
+          <div class="content-description">
+            <h1 class="title">Stray cats need your help</h1>
+            <p>
+              Number population of cats in indonesia increace. We need to do something.
+              Don't wait until something bad happend. Stray cat need home and love from their pawrent.
+              Now this is your time contribute to the better environtment.
+            </p>
+          </div>
+
+          <div class="content-image">
+            <img src="img/home-banner.jpg" alt="banner" class="featured-image"/>
+          </div>
+        </article>
+
+        <article id="allcat" class="list-all-cat article-container">
+          <div class="content-description">
+            <h3 class="title">Cats for Adoption</h3>
+
+            <div class="hta-container">
+              <div class="hta-box card">
+                <img src="img/cat-1.jpg" alt="Cat Image" class="featured-image" />
+                <div class="cat-detail-container">
+                  <p class="subtitle">Oyen</p>
+                  <hr>
+                  <div class="cat-detail">
+                    <p><i class="fa fa-venus-mars" style="color: grey;"></i> Female</p>
+                    <p>1 year</p>
+                  </div>
+                </div>
+              </div>
+              <div class="hta-box card">
+                <img src="img/cat-2.jpg" alt="Cat Image" class="featured-image" />
+                <div class="cat-detail-container">
+                  <p class="subtitle">Boni</p>
+                  <hr>
+                  <div class="cat-detail">
+                    <p><i class="fa fa-venus-mars" style="color: grey;"></i> Male</p>
+                    <p>6 month</p>
+                  </div>
+                </div>
+              </div>
+              <div class="hta-box card">
+                <img src="img/cat-3.jpg" alt="Cat Image" class="featured-image" />
+                <div class="cat-detail-container">
+                  <p class="subtitle">Mika</p>
+                  <hr>
+                  <div class="cat-detail">
+                    <p><i class="fa fa-venus-mars" style="color: grey;"></i> Female</p>
+                    <p>4 year</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article id="howto" class="how-to-adopt article-container">
+          <div class="content-description">
+            <h3 class="title">How to Adopt</h3>  
+
+            <div class="hta-container">
+              <div class="hta-box card">
+                <img src="img/paper.png" alt="icon" class="icon-img" />
+                <p class="subtitle">Fill Form</p>
+                <p>Fill the adoption form and submit. Our team will review your application.</p>
+              </div>
+              <div class="hta-box card">
+                <img src="img/interview.png" alt="icon" class="icon-img"/>
+                <p class="subtitle">Interview</p>
+                <p>We want to know you more and to make sure that you are capable to take care our cat</p>
+              </div>
+              <div class="hta-box card">
+                <img src="img/man-pet.png" alt="icon" class="icon-img"/>
+                <p class="subtitle">Meet the cat</p>
+                <p>Finally, you can make an appointment to meet the cat</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article id="about" class="home-banner article-container">
+          <div class="content-image">
+            <img src="img/pet-us.png" alt="Cat" />
+          </div>
+          <div class="content-description">
+            <h1 class="title">About Us</h1>
+            <p>
+              Cat adopt is a community based in Jakarta, Indonesia. Our goals is we want to give a proper life for stray cats.
+              Not only give food for the cat but we provide sterilization, shelter and medication for the sick cat.
+              <br><br>
+              Reach us on +62-8xxxx-xxxx-xxx
+              <br>
+              Email hello@xxxx.io
+            </p>
+            <p id="address" style="visibility: hidden;">Visit our cat at Sentosa Island 123, Jakarta</p>
+
+            <script>
+              function showAboutDetail() {
+                document.getElementById("address").style.visibility = "";
+                document.getElementById("btnAbout").style.visibility = "hidden";
+              }
+            </script>
+
+            <button id="btnAbout" onclick="showAboutDetail()">View more</button>            
+          </div>
+        </article>
+
+      </div>      
+
+      <aside>
+        <div class="social-media" onclick="openNav()">
+          <div class="donate-container">
+            <img src="img/paw.png" alt="paw" />
+            <p>Donate</p>
+          </div>
+        </div>
+      </aside>
+      
+      <!-- Overlay Menu Donate -->
+      <div id="overlayDonate" class="overlay">
+        <a href="javascript:void(0)" class="close-overlay" onclick="closeNav()">&times;</a>
+        <div class="overlay-content" id="donate-description">
+          <h1>Change cats life</h1>
+          <p>You can send your donation to Sentosa Island 123, Jakarta</p>
+        </div>      
+      </div>
+    
+      <script>
+        function openNav() {
+          document.getElementById("overlayDonate").style.width = "100%";
+          document.getElementById("donate-description").style.visibility = "visible";
+        }
+
+        function closeNav() {
+          document.getElementById("overlayDonate").style.width = "0%";
+          document.getElementById("donate-description").style.visibility = "collapse";
+        }
+      </script>
+    </main>
+
+    <footer>
+      <p>Join cat family</p>
+      <ul class="footer-sosmed">
+        <li>
+          <a href="https://www.google.com" target="_blank"><i class="fab fa-youtube"></i></a>
+        </li>
+        <li>
+          <a href="https://www.google.com" target="_blank"><i class="fab fa-facebook"></i></a>
+        </li>
+        <li>
+          <a href="https://www.google.com" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        </li>
+      </ul>
+      <i style="font-size:12px" class="fa">&#xf1f9; 2024, Patricia Gilberta</i>
+    </footer>
+  </body>
+</html>

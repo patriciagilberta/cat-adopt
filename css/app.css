@@ -1,0 +1,395 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Fjalla', sans-serif;
+  height: 100hv;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+header.navbar-container {
+  width: 100%;
+  max-width: 1200px;
+  padding-block: 1rem;
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: sticky;
+  top:0;
+  background-color: white;
+  z-index: 1;
+}
+
+header.navbar-container .logo img {
+  width: 150px;
+}
+
+header.navbar-container .nav-list ul {
+  padding-left: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem 1rem;
+}
+
+header.navbar-container .nav-list li {
+  list-style-type: none;
+}
+
+header.navbar-container .nav-list li a {
+  padding: 0.5rem 1.5rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: black;
+  transition: all 0.2s ease-in-out;
+}
+
+header.navbar-container .nav-list li:hover a {
+  background-color: #FFBD59;
+  color: white;
+}
+
+main {
+  flex: 1;
+  width: 100%;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding: 2rem 2rem;
+  display: flex;
+  align-items: center;
+}
+
+main .content {
+  flex:1
+}
+
+main .home-banner {
+  flex: 1;  
+  display: flex;
+  align-items: center;
+}
+
+main .content .content-description {
+  flex: 1 1;
+}
+
+main .content .content-description .title {
+  margin-right: 1rem;
+  margin-block: 1rem;
+  font-size: 3.5rem;
+}
+
+main .content .content-description p {
+  margin-right: 1rem;
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+}
+
+main .content .content-description button {
+  padding: 0.8rem 2.5rem;
+  border: 3px solid transparent;
+  border-radius: 999px;
+  margin-block-start: 1rem;
+  background-color: #FFBD59;
+  font-family: 'Fjalla', sans-serif;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 700;
+  color: white;
+  cursor: pointer;
+  transition: all 0.15s ease-in;
+}
+
+main .content .content-description button:hover {
+  border: 3px solid #FFBD59;
+  background-color: transparent;
+  color: #FFBD59;
+}
+
+main .content .content-image {
+  flex: 1;
+  display: flex;
+  width: 100%;
+}
+
+main .content .content-image img {
+  width: 100%;
+  min-width: 250px;
+  /* margin: auto; */
+  object-fit: cover;
+  object-position: center;
+}
+
+main aside {
+  position: fixed;
+  inset-block: 0;
+  inset-inline-end: 0;
+}
+
+main aside .social-media {
+  height: 100%;
+  display: flex;
+}
+
+main aside .donate-container {
+  padding: 1rem 0.5rem;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  margin: auto;
+  background-color: #2d3e50;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  /* writing-mode:vertical-rl; */
+  /* gap: 1.5rem; */
+  /* rotate: 90deg; */
+}
+
+main aside .donate-container img {
+  width: 30px;
+  min-width: 10px;
+}
+
+main aside .social-media ul {
+  padding: 1.5rem 1rem;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  margin: auto;
+  background-color: #2d3e50;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+main aside .social-media li {
+  list-style-type: none;
+}
+
+main aside .social-media li a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: white;
+  transition: all 0.1s ease-in-out;
+}
+
+main aside .social-media li a:hover {
+  color: #89b0d9;
+}
+
+main .how-to-adopt {
+  text-align: center;
+}
+
+.tbl-how-to-adopt {
+  background-color: #00a2c6;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  padding: 2rem
+}
+
+.hta-container {
+  margin: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.hta-box {
+  width: 100%;
+  min-width: 250px;
+  margin: 1rem;
+  text-align: center;
+  padding: 2rem;
+  font-size: 2px;
+}
+
+.subtitle {
+  margin-block: 1rem;
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+
+footer {
+  padding: 20px;
+  color: white;
+  background-color: #FFBD59;
+  text-align: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+footer .footer-sosmed{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style-type: none;
+  padding-left: 0;
+  gap: 2rem 1rem;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.featured-image {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.cat-detail {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.article-container {
+  margin-top: 7rem;
+}
+
+.icon-img {
+  width: 20%;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  right: 0;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #FFBD59; 
+  color: white; 
+  font-weight: 600;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+#allcat .card {
+  padding: 0px;
+}
+
+#allcat .cat-detail-container {
+  padding: 5px 20px;
+}
+
+@media screen and (max-width: 1000px) {
+  #burgermenu {
+    display: block;
+  }
+
+  .nav-list ul li {
+    display: none;
+  }
+  
+}
+
+@media screen and (min-width: 1000px) {
+  #burgermenu {
+    display: none;
+  }
+  .dropdown{
+    position: absolute;
+  }
+
+  .nav-list ul li {
+    display: block;
+  }  
+}
+
+@media screen and (max-width: 800px) {
+  .hta-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  main .home-banner {
+    margin-right: 1rem;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.overlay {  
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: rgb(0,0,0);
+  transition: 0.5s;
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  width: 0;
+}
+
+.overlay-content {
+  position: relative;
+  text-align: center;
+  margin-top: 30px;
+  width: 100%;
+  top: 45%;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .close-overlay {
+    top: 15px;
+    right: 35px;
+    font-size: 40px;
+  }
+}
+
+.overlay a {
+  color: #818181;
+  text-decoration: none;
+  font-size: 36px;
+  display: block;
+  padding: 8px;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus, .overlay-content h1, .overlay-content p {
+  color: #f1f1f1;
+}
+
+.overlay .close-overlay {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
